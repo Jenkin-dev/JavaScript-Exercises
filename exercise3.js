@@ -26,23 +26,15 @@ console.log(`The perimeter of the said rectangle is ${PERIMETER}`);
 //QUESTION THIRTEEN
 
 let year = 2024;
-if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
-  console.log(
-    "The input year is a leap year since it is divisible by 4, 100, and 400"
-  );
-} else if (year % 4 == 0 && !(year % 100 == 0)) {
-  console.log("It is a leap year since it is divisible by 4 but not by 100");
+if (year >= 0) {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    console.log(`${year} is a leap year`);
+  } else {
+    console.log(`${year} is not a leap year`);
+  }
+} else {
+  console.log(`${year} is not a valid year`);
 }
-// else if (year % 4 == 0 && year % 100 == 0 && !(year % 400 == 0)) {
-//   console.log(
-//     "It is not a leap year since it is divisible by 100 but not by 400"
-//   );
-// }
-//THIS COMMENTED BLOCK OF CODE IS LOGICALLY CORRECT BUT NOT NECESSARY BECAUSE (IT WAS INTENDED TO CATCH YEARS LIKE 1900 THAT ARE DIVISIBLE BY 4 BUT NOT A LEAP YEAR) WHICH WOULD HAVE FAILED BOTH THE FIRST AND SECOND CONDITION ALREADY.
-
-//IT WOULD HAVE FAILED THE FIRST CONDITION BECAUSE IT IS NOT DIVISIBLE BY 400
-//AND THE SECOND BECAUSE NO NUMBER CAN BE DIVISIBLE BY 400 IF IT CANNOT BE DIVISIBLE BY 100
-else console.log("It is definitely not a leap year");
 
 //QUESTION FOURTEEN
 
