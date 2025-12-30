@@ -25,6 +25,10 @@ if (age >= 18 && hasLicense) {
 let totalAmount = 1000;
 let isMember = true;
 
+let finalAmount;
+
+console.log(finalAmount); //This will be undefined since i Have not yet initialized it
+
 if (isMember) {
   finalAmount = totalAmount * 0.8; //If there is a 20% discount, then the person would be paying 80% of the total amount
 } else {
@@ -36,6 +40,7 @@ console.log(finalAmount);
 //QUESTION NINETEEN
 
 let number = 15;
+let i;
 for (i = 1; i <= number; i++) {
   if (i % 3 === 0) {
     console.log(i);

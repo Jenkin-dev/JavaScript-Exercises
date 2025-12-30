@@ -43,8 +43,7 @@ if (isWeekend) {
 
 let num = 24;
 let numCheck = num % 2;
-console.log(numCheck);
-if (numCheck == 0) {
+if (numCheck === 0) {
   console.log(`The number ${num} that was chosen is an even number`);
 } else {
   console.log(`The number ${num} that was chosen is an odd number `);

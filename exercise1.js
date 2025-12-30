@@ -46,7 +46,7 @@ let number = -128;
 
 if (number > 0) {
   console.log(`The number ${number} you inputed is positive`);
-} else if (number == 0) {
+} else if (number === 0) {
   console.log(`The number ${number} you inputed is zero`);
 } else {
   console.log(`The number ${number} you inputed is negative`);
